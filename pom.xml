@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
-	<artifactId>demo-app-onprem</artifactId>
-	<version>1.0.0</version>
+	<groupId>cee0d73c-e3e1-46f3-bab6-85ec5302e7e1</groupId>
+	<artifactId>demo-app-onprem1-example</artifactId>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
-	<name>demo-app-onprem</name>
+	<name>demo-app-onprem1-example</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,6 +41,7 @@
 						<password>Jashwanth@964</password>
 						<environment>Sandbox</environment>
 					</armDeployment>
+					<classifier>mule-application-example</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -86,5 +87,12 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
+	<distributionManagement>
+		<repository>
+			<id>anypoint-exchange-Rahul96474</id>
+			<name>anypoint-exchange-Rahul96474</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/cee0d73c-e3e1-46f3-bab6-85ec5302e7e1/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 </project>
